@@ -13,6 +13,7 @@
 		86DB3293239331DD00803B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DB3292239331DD00803B29 /* Assets.xcassets */; };
 		86DB3296239331DD00803B29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86DB3295239331DD00803B29 /* Preview Assets.xcassets */; };
 		86DB3299239331DD00803B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DB3297239331DD00803B29 /* LaunchScreen.storyboard */; };
+		86DB32A12393388600803B29 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32A02393388600803B29 /* LogInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		86DB3295239331DD00803B29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86DB3298239331DD00803B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86DB329A239331DD00803B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86DB32A02393388600803B29 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				86DB328C239331DB00803B29 /* AppDelegate.swift */,
 				86DB328E239331DB00803B29 /* SceneDelegate.swift */,
 				86DB3290239331DB00803B29 /* ContentView.swift */,
+				86DB32A02393388600803B29 /* LogInView.swift */,
 				86DB3292239331DD00803B29 /* Assets.xcassets */,
 				86DB3297239331DD00803B29 /* LaunchScreen.storyboard */,
 				86DB329A239331DD00803B29 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				86DB328D239331DB00803B29 /* AppDelegate.swift in Sources */,
 				86DB328F239331DB00803B29 /* SceneDelegate.swift in Sources */,
+				86DB32A12393388600803B29 /* LogInView.swift in Sources */,
 				86DB3291239331DB00803B29 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
