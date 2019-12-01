@@ -7,10 +7,18 @@
 //
 
 import SwiftUI
+import Combine
+import UIKit
+
+ final class StatusNavigation: ObservableObject {
+    
+    @Published var statusNavigation: StatusViews = StatusViews.logInView
+}
+
 
 struct SignInView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @EnvironmentObject var StatusNavigation: StatusNavigation
+    
     var body: some View {
         ZStack{
             
@@ -30,7 +38,9 @@ struct SignInView: View {
                     .padding(.bottom, 50)
                 
                 HStack{
-                    Button(action: {}) {
+                    Button(action: {
+                        self.StatusNavigation.statusNavigation = StatusViews.facebookView
+                    }) {
                         Text("Facebook")
                             .font(.headline)
                             .foregroundColor(.white)
@@ -44,7 +54,7 @@ struct SignInView: View {
                     Spacer()
                 }.padding()
                 HStack{
-                    Button(action: {}) {
+                    Button(action: {self.StatusNavigation.statusNavigation = .homeView}) {
                         Text("Gmail")
                             .font(.headline)
                             .foregroundColor(.white)
@@ -58,7 +68,7 @@ struct SignInView: View {
                     Spacer()
                 }.padding()
                 HStack{
-                    Button(action: {}) {
+                    Button(action: {self.StatusNavigation.statusNavigation = .homeView}) {
                         Text("Twitter")
                             .font(.headline)
                             .foregroundColor(.white)
@@ -85,17 +95,9 @@ struct SignInView: View {
                     }
                 }
             }
-            
-            //        }
-            ////            .lineLimit(.none)
-            
         }.background(
             LinearGradient(gradient: Gradient(colors: [.green, .blue]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all))
-        
-        
-        
-        
     }
 }
 

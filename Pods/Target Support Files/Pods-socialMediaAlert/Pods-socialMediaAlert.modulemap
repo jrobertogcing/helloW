@@ -1,0 +1,6 @@
+framework module Pods_socialMediaAlert {
+  umbrella header "Pods-socialMediaAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

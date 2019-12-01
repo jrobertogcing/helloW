@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,15 @@
 		86DB3299239331DD00803B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86DB3297239331DD00803B29 /* LaunchScreen.storyboard */; };
 		86DB32A12393388600803B29 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32A02393388600803B29 /* LogInView.swift */; };
 		86DB32A323933DEB00803B29 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32A223933DEB00803B29 /* SignInView.swift */; };
+		86DB32A52393607700803B29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86DB32A42393607700803B29 /* GoogleService-Info.plist */; };
+		86DB32AB239393F600803B29 /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32AA239393F600803B29 /* FacebookViewController.swift */; };
+		86DB32AD2393949B00803B29 /* FacebookDelegateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32AC2393949B00803B29 /* FacebookDelegateObserver.swift */; };
+		86DB32AF239397F400803B29 /* UniNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32AE239397F300803B29 /* UniNavigation.swift */; };
+		DF8E40124E7C332CADD93594 /* Pods_socialMediaAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4279B90B2C5343377BC4B8 /* Pods_socialMediaAlert.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62AF6A76B88C46BDBC3CEB1F /* Pods-socialMediaAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMediaAlert.release.xcconfig"; path = "Target Support Files/Pods-socialMediaAlert/Pods-socialMediaAlert.release.xcconfig"; sourceTree = "<group>"; };
 		86DB3289239331DB00803B29 /* socialMediaAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialMediaAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DB328C239331DB00803B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86DB328E239331DB00803B29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +34,12 @@
 		86DB329A239331DD00803B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86DB32A02393388600803B29 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		86DB32A223933DEB00803B29 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		86DB32A42393607700803B29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86DB32AA239393F600803B29 /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
+		86DB32AC2393949B00803B29 /* FacebookDelegateObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookDelegateObserver.swift; sourceTree = "<group>"; };
+		86DB32AE239397F300803B29 /* UniNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniNavigation.swift; sourceTree = "<group>"; };
+		DE4279B90B2C5343377BC4B8 /* Pods_socialMediaAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialMediaAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F324AC6C4C38868A165DA0 /* Pods-socialMediaAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMediaAlert.debug.xcconfig"; path = "Target Support Files/Pods-socialMediaAlert/Pods-socialMediaAlert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF8E40124E7C332CADD93594 /* Pods_socialMediaAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2384A355EC774F88C12B5F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE4279B90B2C5343377BC4B8 /* Pods_socialMediaAlert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86DB3280239331DB00803B29 = {
 			isa = PBXGroup;
 			children = (
 				86DB328B239331DB00803B29 /* socialMediaAlert */,
 				86DB328A239331DB00803B29 /* Products */,
+				906CC38F6633B14BA6E951BA /* Pods */,
+				2384A355EC774F88C12B5F5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +88,13 @@
 				86DB3290239331DB00803B29 /* ContentView.swift */,
 				86DB32A02393388600803B29 /* LogInView.swift */,
 				86DB32A223933DEB00803B29 /* SignInView.swift */,
+				86DB32AA239393F600803B29 /* FacebookViewController.swift */,
+				86DB32AE239397F300803B29 /* UniNavigation.swift */,
+				86DB32AC2393949B00803B29 /* FacebookDelegateObserver.swift */,
 				86DB3292239331DD00803B29 /* Assets.xcassets */,
 				86DB3297239331DD00803B29 /* LaunchScreen.storyboard */,
 				86DB329A239331DD00803B29 /* Info.plist */,
+				86DB32A42393607700803B29 /* GoogleService-Info.plist */,
 				86DB3294239331DD00803B29 /* Preview Content */,
 			);
 			path = socialMediaAlert;
@@ -81,6 +108,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		906CC38F6633B14BA6E951BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1F324AC6C4C38868A165DA0 /* Pods-socialMediaAlert.debug.xcconfig */,
+				62AF6A76B88C46BDBC3CEB1F /* Pods-socialMediaAlert.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86DB329D239331DD00803B29 /* Build configuration list for PBXNativeTarget "socialMediaAlert" */;
 			buildPhases = (
+				342A703329848A6E3E9BD50C /* [CP] Check Pods Manifest.lock */,
 				86DB3285239331DB00803B29 /* Sources */,
 				86DB3286239331DB00803B29 /* Frameworks */,
 				86DB3287239331DB00803B29 /* Resources */,
+				4E7E4907499BA1733C10C346 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86DB3299239331DD00803B29 /* LaunchScreen.storyboard in Resources */,
+				86DB32A52393607700803B29 /* GoogleService-Info.plist in Resources */,
 				86DB3296239331DD00803B29 /* Preview Assets.xcassets in Resources */,
 				86DB3293239331DD00803B29 /* Assets.xcassets in Resources */,
 			);
@@ -147,15 +186,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		342A703329848A6E3E9BD50C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-socialMediaAlert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E7E4907499BA1733C10C346 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-socialMediaAlert/Pods-socialMediaAlert-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-socialMediaAlert/Pods-socialMediaAlert-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-socialMediaAlert/Pods-socialMediaAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86DB3285239331DB00803B29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DB32AB239393F600803B29 /* FacebookViewController.swift in Sources */,
 				86DB328D239331DB00803B29 /* AppDelegate.swift in Sources */,
+				86DB32AD2393949B00803B29 /* FacebookDelegateObserver.swift in Sources */,
 				86DB328F239331DB00803B29 /* SceneDelegate.swift in Sources */,
 				86DB32A12393388600803B29 /* LogInView.swift in Sources */,
 				86DB3291239331DB00803B29 /* ContentView.swift in Sources */,
+				86DB32AF239397F400803B29 /* UniNavigation.swift in Sources */,
 				86DB32A323933DEB00803B29 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +374,7 @@
 		};
 		86DB329E239331DD00803B29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F324AC6C4C38868A165DA0 /* Pods-socialMediaAlert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +394,7 @@
 		};
 		86DB329F239331DD00803B29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AF6A76B88C46BDBC3CEB1F /* Pods-socialMediaAlert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
