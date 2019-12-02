@@ -19,6 +19,15 @@
 		86DB32AB239393F600803B29 /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32AA239393F600803B29 /* FacebookViewController.swift */; };
 		86DB32AD2393949B00803B29 /* FacebookDelegateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32AC2393949B00803B29 /* FacebookDelegateObserver.swift */; };
 		86DB32AF239397F400803B29 /* UniNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32AE239397F300803B29 /* UniNavigation.swift */; };
+		86DB32B123947D4100803B29 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32B023947D4100803B29 /* HomeListView.swift */; };
+		86DB32B72394810400803B29 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32B62394810400803B29 /* TabBarView.swift */; };
+		86DB32BA2394814700803B29 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32B92394814700803B29 /* HomeView.swift */; };
+		86DB32BD2394823400803B29 /* CardsBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32BC2394823400803B29 /* CardsBottom.swift */; };
+		86DB32C02394830500803B29 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32BF2394830500803B29 /* SettingsView.swift */; };
+		86DB32C22394832C00803B29 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32C12394832C00803B29 /* BlurView.swift */; };
+		86DB32C5239483ED00803B29 /* UpdateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32C4239483ED00803B29 /* UpdateListView.swift */; };
+		86DB32C72394840C00803B29 /* UpdateDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32C62394840C00803B29 /* UpdateDetailView.swift */; };
+		86DB32C92394842A00803B29 /* UpdateStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB32C82394842A00803B29 /* UpdateStoreView.swift */; };
 		DF8E40124E7C332CADD93594 /* Pods_socialMediaAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4279B90B2C5343377BC4B8 /* Pods_socialMediaAlert.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +47,15 @@
 		86DB32AA239393F600803B29 /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		86DB32AC2393949B00803B29 /* FacebookDelegateObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookDelegateObserver.swift; sourceTree = "<group>"; };
 		86DB32AE239397F300803B29 /* UniNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniNavigation.swift; sourceTree = "<group>"; };
+		86DB32B023947D4100803B29 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeListView.swift; path = socialMediaAlert/HomeListView.swift; sourceTree = SOURCE_ROOT; };
+		86DB32B62394810400803B29 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		86DB32B92394814700803B29 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		86DB32BC2394823400803B29 /* CardsBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsBottom.swift; sourceTree = "<group>"; };
+		86DB32BF2394830500803B29 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		86DB32C12394832C00803B29 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		86DB32C4239483ED00803B29 /* UpdateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateListView.swift; sourceTree = "<group>"; };
+		86DB32C62394840C00803B29 /* UpdateDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetailView.swift; sourceTree = "<group>"; };
+		86DB32C82394842A00803B29 /* UpdateStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStoreView.swift; sourceTree = "<group>"; };
 		DE4279B90B2C5343377BC4B8 /* Pods_socialMediaAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialMediaAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F324AC6C4C38868A165DA0 /* Pods-socialMediaAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMediaAlert.debug.xcconfig"; path = "Target Support Files/Pods-socialMediaAlert/Pods-socialMediaAlert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,16 +104,19 @@
 				86DB328C239331DB00803B29 /* AppDelegate.swift */,
 				86DB328E239331DB00803B29 /* SceneDelegate.swift */,
 				86DB3290239331DB00803B29 /* ContentView.swift */,
-				86DB32A02393388600803B29 /* LogInView.swift */,
-				86DB32A223933DEB00803B29 /* SignInView.swift */,
-				86DB32AA239393F600803B29 /* FacebookViewController.swift */,
-				86DB32AE239397F300803B29 /* UniNavigation.swift */,
-				86DB32AC2393949B00803B29 /* FacebookDelegateObserver.swift */,
+				86DB32B223947DF400803B29 /* Registration */,
+				86DB32B423947E1D00803B29 /* Navigation */,
+				86DB32B5239480EB00803B29 /* TabBar */,
+				86DB32B82394813900803B29 /* Home */,
+				86DB32BB2394820D00803B29 /* CardTwo */,
+				86DB32BE239482F600803B29 /* Settings */,
+				86DB32C32394839800803B29 /* Update */,
 				86DB3292239331DD00803B29 /* Assets.xcassets */,
 				86DB3297239331DD00803B29 /* LaunchScreen.storyboard */,
 				86DB329A239331DD00803B29 /* Info.plist */,
 				86DB32A42393607700803B29 /* GoogleService-Info.plist */,
 				86DB3294239331DD00803B29 /* Preview Content */,
+				86DB32C12394832C00803B29 /* BlurView.swift */,
 			);
 			path = socialMediaAlert;
 			sourceTree = "<group>";
@@ -106,6 +127,68 @@
 				86DB3295239331DD00803B29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86DB32B223947DF400803B29 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				86DB32A02393388600803B29 /* LogInView.swift */,
+				86DB32A223933DEB00803B29 /* SignInView.swift */,
+				86DB32AA239393F600803B29 /* FacebookViewController.swift */,
+				86DB32AC2393949B00803B29 /* FacebookDelegateObserver.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		86DB32B423947E1D00803B29 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				86DB32AE239397F300803B29 /* UniNavigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		86DB32B5239480EB00803B29 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				86DB32B62394810400803B29 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		86DB32B82394813900803B29 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				86DB32B023947D4100803B29 /* HomeListView.swift */,
+				86DB32B92394814700803B29 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		86DB32BB2394820D00803B29 /* CardTwo */ = {
+			isa = PBXGroup;
+			children = (
+				86DB32BC2394823400803B29 /* CardsBottom.swift */,
+			);
+			path = CardTwo;
+			sourceTree = "<group>";
+		};
+		86DB32BE239482F600803B29 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				86DB32BF2394830500803B29 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		86DB32C32394839800803B29 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				86DB32C4239483ED00803B29 /* UpdateListView.swift */,
+				86DB32C62394840C00803B29 /* UpdateDetailView.swift */,
+				86DB32C82394842A00803B29 /* UpdateStoreView.swift */,
+			);
+			path = Update;
 			sourceTree = "<group>";
 		};
 		906CC38F6633B14BA6E951BA /* Pods */ = {
@@ -233,14 +316,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DB32B123947D4100803B29 /* HomeListView.swift in Sources */,
+				86DB32C22394832C00803B29 /* BlurView.swift in Sources */,
+				86DB32C72394840C00803B29 /* UpdateDetailView.swift in Sources */,
 				86DB32AB239393F600803B29 /* FacebookViewController.swift in Sources */,
 				86DB328D239331DB00803B29 /* AppDelegate.swift in Sources */,
 				86DB32AD2393949B00803B29 /* FacebookDelegateObserver.swift in Sources */,
 				86DB328F239331DB00803B29 /* SceneDelegate.swift in Sources */,
+				86DB32BA2394814700803B29 /* HomeView.swift in Sources */,
 				86DB32A12393388600803B29 /* LogInView.swift in Sources */,
+				86DB32C5239483ED00803B29 /* UpdateListView.swift in Sources */,
+				86DB32C92394842A00803B29 /* UpdateStoreView.swift in Sources */,
 				86DB3291239331DB00803B29 /* ContentView.swift in Sources */,
 				86DB32AF239397F400803B29 /* UniNavigation.swift in Sources */,
+				86DB32B72394810400803B29 /* TabBarView.swift in Sources */,
+				86DB32BD2394823400803B29 /* CardsBottom.swift in Sources */,
 				86DB32A323933DEB00803B29 /* SignInView.swift in Sources */,
+				86DB32C02394830500803B29 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

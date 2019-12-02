@@ -32,24 +32,22 @@ class FacebookViewController: UIViewController, LoginButtonDelegate {
                 // if user cancel the login
                 if (result?.isCancelled)!{
                     
-                    
                     let swiftUIView = UniNavigation()
                     //Set evirament variables for SwiftUI
                     let vc = UIHostingController(rootView: swiftUIView
                         .environmentObject(StatusNavigation())
-                        //            .environmentObject(approvalRows)
                     )
                     
                     //THIS IS FOR THE VIEW
-                               self.addChild(vc)
-                               //vc.view.translatesAutoresizingMaskIntoConstraints = false
-                               //vc.view.frame = self.view.bounds
-                               //vc.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-                               self.view.addSubview(vc.view)
-                               // Configure Child View
-                               vc.view.frame = self.view.bounds
-                               vc.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-                               vc.didMove(toParent: self)
+                   self.addChild(vc)
+                   //vc.view.translatesAutoresizingMaskIntoConstraints = false
+                   //vc.view.frame = self.view.bounds
+                   //vc.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+                   self.view.addSubview(vc.view)
+                   // Configure Child View
+                   vc.view.frame = self.view.bounds
+                   vc.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                   vc.didMove(toParent: self)
                     
                     
                     return
@@ -70,6 +68,25 @@ class FacebookViewController: UIViewController, LoginButtonDelegate {
                 if (error == nil){
                     //everything works print the user data
                     print(result!)
+                    let swiftUIView = UniNavigation()
+                    //Set evirament variables for SwiftUI
+                    let vc = UIHostingController(rootView: swiftUIView
+                        .environmentObject(StatusNavigation())
+                        //            .environmentObject(approvalRows)
+                    )
+                    
+                    //THIS IS FOR THE VIEW
+                    self.addChild(vc)
+                    //vc.view.translatesAutoresizingMaskIntoConstraints = false
+                    //vc.view.frame = self.view.bounds
+                    //vc.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+                    self.view.addSubview(vc.view)
+                    // Configure Child View
+                    vc.view.frame = self.view.bounds
+                    vc.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                    vc.didMove(toParent: self)
+                    
+                    
                 }
             })
         }

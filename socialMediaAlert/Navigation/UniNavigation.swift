@@ -16,23 +16,28 @@ enum StatusViews{
     case facebookView
     case homeView
     case logInView
-
+    case signInView
+    
     
 }
 
 struct UniNavigation: View {
     
-//    @EnvironmentObject var StatusNavigation: StatusNavigation
+    //    @EnvironmentObject var StatusNavigation: StatusNavigation
     @EnvironmentObject var StatusNavigation : StatusNavigation
-
+    
     var body: some View {
         if StatusNavigation.statusNavigation == .facebookView {
-            return AnyView(FacebookDelegateObserver())
+            return AnyView(FacebookDelegateObserver().edgesIgnoringSafeArea(.all))
         } else if StatusNavigation.statusNavigation == .logInView {
-            return AnyView(LogInView())
+            return AnyView(LogInView().edgesIgnoringSafeArea(.all))
+        }else if StatusNavigation.statusNavigation == .homeView {
+            return AnyView(Home().edgesIgnoringSafeArea(.all))
+        }else if StatusNavigation.statusNavigation == .signInView {
+            return AnyView(SignInView().edgesIgnoringSafeArea(.all))
         }
         else {
-            return AnyView(ContentView())
+            return AnyView(ContentView().edgesIgnoringSafeArea(.all))
         }
     }
 }
